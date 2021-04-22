@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<button id="Add">Increment</button>
+<button id="Sub">Decrement</button>
+<script>
+document.getElementById("Add").addEventListener("click", Incr);
+document.getElementById("Sub").addEventListener("click", Decr);
+
+var x = 0;
+function Incr() {
+  document.getElementById("Add").innerHTML = x += 1;
+}
+function Decr() {
+  document.getElementById("Sub").innerHTML = x -= 1;
+}
+</script>
+
+</body>
+</html>
